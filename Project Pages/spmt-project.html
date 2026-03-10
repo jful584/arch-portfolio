@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Processional Promenade</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+  <link rel="stylesheet" href="project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../header-styles.css">
+</head>
+
+
+
+
+
+
+<body>
+  <section class="header">
+    <div class="left-section">
+      <a href="../index.html" class="name-top">JACK FULLER</a>
+    </div>
+    <div class="right-section">
+      <a href="../about.html" class="about-button">About</a>
+      <a href="../contact.html" class="contact-button">Contact</a>
+    </div>
+  </section>
+
+  <section class="title-container">
+    <h1 class="title">Spatial Membrane</h1>
+    <p class="date">Fall 2025</p>
+    <p class="description">	<span class="indent">
+      In this project, I manipulated a singular, rectangular surface to create a variety of spaces and 
+      interesting pathways for pedestrian use. The focus was on morphing the surface while still maintaining 
+      a smooth form in order to recognize the original plane.
+    </span>
+
+
+      <span class="indent">	To make the complex twists, bends, and holes, I learned many new operations in Rhino. 
+        By researching how different objects interacted with my surface to instigate the creation of space, 
+        I was able to develop areas on the same surface with unique experiences.</span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="SPMT-Project-images/SPMT_xldraw2_pdf2_comp_page-0001.webp" id="viewerImage" data-index="0" data-caption="the capton 1" alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Experiential View
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="SPMT-Project-images/SPMT_xldraw2_pdf2_comp_page-0001.webp"  data-caption="Experiential view" alt="">
+      <img src="SPMT-Project-images/matrix_tri copy.webp"  data-caption="Triangular mesh view" alt="">
+      <img src="SPMT-Project-images/matrix_contours copy.webp"  data-caption="Contour view" alt="">
+      <img src="SPMT-Project-images/matrix_curvanal copy.webp"  data-caption="Curvature analysis view" alt="">
+      <img src="SPMT-Project-images/matrix_diagrid copy.webp"  data-caption="Diagrid multipipe view" alt="">
+      <img src="SPMT-Project-images/matrix_iso copy.webp"  data-caption="Isocurve view" alt="">
+      <img src="SPMT-Project-images/matrix_zebra copy.webp"  data-caption="Zebra stripe view" alt="">
+
+
+
+
+
+  </section>
+
+  <script src="viewer-script.js"></script>
+  
+</body>
+</html>

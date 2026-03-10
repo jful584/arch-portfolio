@@ -1,0 +1,292 @@
+:root {
+  --text-color: #1a1c20;
+  --light-color: lightgrey;
+  --link-color: #ff7e3e;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Aileron', 'Times New Roman';
+  color: var(--text-color);
+
+}
+
+
+
+
+
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  padding: 20px 5vw;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.intro-text {
+  padding: 30px 4vw;
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro-picture-container {
+  flex: 1;
+  place-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.intro-picture-container img {
+  width: 30vw;
+  border-radius: 50px;
+  box-shadow: -4px 4px 5px lightgrey;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  .intro {
+    display: block;
+  }
+
+  .intro-text {
+    flex: 1;
+  }
+
+  .intro-text h1 {
+    font-size: 30px;
+  }
+
+  .intro-text p {
+    font-size: 18px;
+  }
+
+  .intro-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .intro-picture-container img {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-picture-container img {
+    width: 80vw;
+  }
+}
+
+
+
+
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 12vw;
+}
+
+.experience h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.experience h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.experience h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.experience p {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+
+.skills-grid {
+  align-items:start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  row-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  justify-content: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: -4px 4px 5px lightgrey;
+}
+
+.card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 20vw;
+}
+
+.card .skill-box-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+  column-gap: 10px;
+}
+
+.card .skill-box {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 100%;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 5px;
+  box-shadow: -4px 4px 5px lightgrey;
+}
+
+@media (max-width: 700px){
+  .skills-grid, .skill-box-grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 80vw;
+  }
+}
+
+
+
+
+
+.more-section h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.more-section .downloads-split {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+}
+
+.more-section .download-button {
+  width: fit-content;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: -4px 4px 5px lightgrey;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.2s;
+}
+
+.more-section .download-button:hover {
+  scale: 1.01;
+  color: var(--link-color);
+}
+
+
+.spacer {
+  margin-bottom: 500px;
+}
+
+@media (max-width: 700px){
+  .downloads-split {
+    flex-direction: column;
+  }
+}

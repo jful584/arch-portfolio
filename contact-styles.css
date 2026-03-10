@@ -1,0 +1,100 @@
+:root {
+  --text-color: #1a1c20;
+  --light-color: lightgrey;
+  --link-color: #ff7e3e;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+}
+
+body {
+  font-family: 'Aileron', 'Times New Roman';
+  color: var(--text-color);
+
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0 5vw;
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+.contact-grid-top {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4vw;
+  row-gap: 50px;
+  justify-items: center;
+  place-items: center;
+}
+.contact-grid-bottom {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4vw;
+  row-gap: 50px;
+  justify-items: center;
+  padding: 0 0;
+}
+
+
+.card {
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: -4px 4px 5px lightgrey;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card:link,
+.card:visited,
+.card:hover,
+.card:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 850px){
+  .contact-grid-top, .contact-grid-bottom {
+    grid-template-columns: 1fr;
+  }
+}

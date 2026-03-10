@@ -1,0 +1,201 @@
+html {
+  min-width: 320px;
+}
+
+
+/*Quote Section*/
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.quote-text {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+
+}
+.quote-author {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+/*Project Grid Section*/
+
+.projects-container {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+  padding: 0 100px;
+}
+
+
+/* 3 columns */
+.card {
+  aspect-ratio: 4 / 3;
+  /* consistent box size */
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: -4px 4px 5px lightgrey;
+  position: relative;
+  transition: scale 0.4s ease;
+  scale: 1;
+  width: 100%;  /* or whatever you want */
+  align-items: center;
+  justify-content: center;
+  background: none;     /* important */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+
+}
+
+.card img.pencil-image {
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 62%;
+}
+
+.card:hover {
+  scale: 1.01;
+}
+
+/*Individual Images*/
+.pp {
+  object-position: 50% 50%;
+  transform: scale(1.2);
+}
+
+img.fsu-card {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #53212d;
+}
+
+
+
+
+
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card .overlay:hover {
+  opacity: 1;
+}
+
+.card .overlay-text {
+  background-color: var(--background-color);
+  text-align: center;
+  border-radius: 10px;
+  padding: .4vw 2vh;
+  color: var(--text-color);
+  transition: 0.15s;
+}
+
+.card .overlay-text:hover {
+  color: var(--link-color);
+}
+
+
+.card .overlay .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .overlay .date {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .quote-author {
+    font-size: 18px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .overlay-text .title {
+    font-size: 14px;
+  }
+
+  .overlay-text .date {
+    font-size: 8px;
+  }
+
+
+}
+@media (max-width: 500px) {
+
+
+  .quote-text {
+    font-size: 14px;
+  }
+
+  .quote-author {
+    font-size: 10px;
+  }
+
+  .projects-container {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 20px;
+  }
+
+
+}

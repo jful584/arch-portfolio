@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Processional Promenade</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+  <link rel="stylesheet" href="project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../header-styles.css">
+</head>
+
+
+
+
+
+
+<body>
+  <section class="header">
+    <div class="left-section">
+      <a href="../index.html" class="name-top">JACK FULLER</a>
+    </div>
+    <div class="right-section">
+      <a href="../about.html" class="about-button">About</a>
+      <a href="../contact.html" class="contact-button">Contact</a>
+    </div>
+  </section>
+
+  <section class="title-container">
+    <h1 class="title">Object of Arresting Novelty</h1>
+    <p class="date">Winter 2026</p>
+    <p class="description">	<span class="indent">
+      The goal of this project was to explore the logic and intricacies behind common objects. First, I selected a pencil sharpener as my object. Although it is a simple box from the outside,
+      I was intrigued at the parts hidden within. Next, I took pictures and drew diagrams that were able to represent the essence of my object in various ways.
+      The scanned array, ghosted perspectagal, and exploded axon diagrams explored the inner workings of the pencil sharpener, while the superimposition and manipulative images 
+      revealed how the exterior of the sharpener related to its interior and the space around it.
+      
+    </span>
+
+
+      <span class="indent">This project expended my knowledge about representation and modeling. By working with many unique pieces, I was able to develop
+        new modeling skills. Also, the simplicity of the sharpener forced me to think outside of the box in order to represent the object in interesting and revealing ways.
+      </span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="Sharpener-images/Super_Imposition_pic2_FINAL1_print.webp" id="viewerImage" data-index="0" data-caption="Object superimposed atop the UT Art+Architecture buidling." alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Object superimposed atop the UT Art+Architecture buidling.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="Sharpener-images/Super_Imposition_pic2_FINAL1_print.webp"  data-caption="Object superimposed atop the UT Art+Architecture buidling." alt="">
+      <img src="Sharpener-images/P1_SCANNED_ARRAY_JackFuller.webp"  data-caption="Scanned array of the pencil sharpener's parts." alt="">
+      <img src="Sharpener-images/athinginspace_att05.1_FINAL2_print.webp"  data-caption="Drawing highlighting the 'soul' of the pencil sharpener." alt="">
+      <img src="Sharpener-images/1.01_manipulative-image_1.webp"  data-caption="Manipulative image of the object, showing the texture of the encasing." alt="">
+      <img src="Sharpener-images/1.01_manipulative-image_2.webp"  data-caption="Manipulative image of the object, showing the action of sharpening." alt="">
+      <img src="Sharpener-images/1.01_manipulative-image_3.webp"  data-caption="Manipulative image of the object, showing the action of spinning." alt="">
+      <img src="Sharpener-images/exploded_axon_drawing_att04_FINAL1_print.webp"  data-caption="Exploded axon drawing showing the construction of the sharpener." alt="">
+
+
+
+
+
+
+  </section>
+
+  <script src="viewer-script.js"></script>
+  
+</body>
+</html>

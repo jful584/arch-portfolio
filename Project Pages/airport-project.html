@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Processional Promenade</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+  <link rel="stylesheet" href="project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../header-styles.css">
+</head>
+
+
+
+
+
+
+<body>
+  <section class="header">
+    <div class="left-section">
+      <a href="../index.html" class="name-top">JACK FULLER</a>
+    </div>
+    <div class="right-section">
+      <a href="../about.html" class="about-button">About</a>
+      <a href="../contact.html" class="contact-button">Contact</a>
+    </div>
+  </section>
+
+  <section class="title-container">
+    <h1 class="title">Modular Airport Terminal</h1>
+    <p class="date">Winter 2025</p>
+    <p class="description">	
+      <span class="indent">
+      Inspired by the complexity of airports with their many different crucial functions, 
+      I designed a new layout for terminal passageways that combine retail, dining, and transit into one 
+      compact footprint.
+      </span>
+
+
+      <span class="indent">	All three modules contain the central elevated “highway” featuring 
+        two moving walkways and a pathway in the middle for accessibility transport. 
+        One module features four stairways and an elevator to allow people to get form one 
+        level to the other. The other two modules have four gates along the sides with shops and 
+        restaurant spaces below the walkway. There is a version with three different stores and 
+        another with one large space.</span>
+
+
+      <span class="indent">	This project was important because it led me to learn how to design for more 
+        specific programs and how to present ideas 
+        in multiple different ways. For example, in this project, I 
+        explored axonometric views, sectional perspective views, and realistic renders.</span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="Airport-images/render_ground_att1_editting peggy.webp" id="viewerImage" data-index="0" data-caption="the capton 1" alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Rendered view of the terminal highway.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="Airport-images/render_ground_att1_editting peggy.webp"  data-caption="Rendered view of the terminal highway." alt="">
+      <img src="Airport-images/render_lower_edited.webp"  data-caption="Rendered view of the lower portion of the terminal." alt="">
+      <img src="Airport-images/render_stairs_edited.webp"  data-caption="Rendered view of the stair and elevator module" alt="">
+      <img src="Airport-images/iso_1store_nog.webp"  data-caption="Isometric view of the module with one large store." alt="">
+      <img src="Airport-images/iso_3stores_nog.webp"  data-caption="Isometric view of the module with three counterfront stores." alt="">
+      <img src="Airport-images/iso_stairs_nog.webp"  data-caption="Isometric view of the module with stairs and an elevator." alt="">
+
+      <img src="Airport-images/term 1 store draw2 f.webp"  data-caption="Line drawing of the module with one large store." alt="">
+      <img src="Airport-images/term1 3 store draw2 f.webp"  data-caption="Line drawing of the module with three counterfront stores." alt="">
+      <img src="Airport-images/term1 stair draw2 f.webp"  data-caption="Line drawing of the module with stairs and an elevator." alt="">
+      <img src="Airport-images/term1 section perspective drawing f copy.webp"  data-caption="Section perspective line drawing." alt="">
+
+
+
+
+
+  </section>
+
+  <script src="viewer-script.js"></script>
+  
+</body>
+</html>
