@@ -5,6 +5,10 @@
   --background-color: #eeeff1;
 }
 
+html {
+  min-width: 500px;
+}
+
 * {
   margin: 0;
   padding: 0;

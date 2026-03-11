@@ -5,7 +5,7 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width:75%;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -25,7 +25,7 @@
   margin-bottom: 40px;
 }
 .title-container .description {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
   padding: 0 10vw;
@@ -191,6 +191,17 @@
 }
 
 
+@media (max-width: 920px) {
+  .title-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-container .description {
+    font-size: 18px;
+  }
+}
 
 
 
