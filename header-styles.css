@@ -2,11 +2,23 @@
   --text-color: #1a1c20;
   --light-color: lightgrey;
   --link-color: #ff7e3e;
+  /*--background-color: #eeeff1;*/
   --background-color: #eeeff1;
+  --page-color: white;
 }
 
-html {
+.dark-mode {
+  --background-color: #1a1a1a;
+  --page-color: #1a1a1a;
+  --link-color: #ff7e3e;
+  --text-color: #eeeff1;
+  --light-color: transparent
+}
+
+html, body {
   min-width: 500px;
+  min-height: 100%;
+  background-color: var(--page-color);
 }
 
 * {
@@ -25,6 +37,8 @@ html {
 body {
   font-family: 'Aileron', 'Times New Roman';
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--page-color);
 
 }
 
@@ -56,6 +70,22 @@ body {
   font-weight: 500;
   display: flex;
   align-items: center;
+}
+
+.header .theme-toggle {
+  background-color: none;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 6px 0px;
+  transition: .15s;
+  border: none;
+  background: none;
+  font-family: 'Aileron', 'Times New Roman';
+  font-size: inherit;
+}
+
+.header .theme-toggle:hover {
+  color: var(--link-color);
 }
 
 .header .about-button,
