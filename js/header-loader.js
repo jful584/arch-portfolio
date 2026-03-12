@@ -1,8 +1,9 @@
-fetch("/components/header.html")
+const BASE = "/arch-portfolio/";
+
+fetch(BASE + "components/header.html")
   .then(res => res.text())
   .then(data => {
-    const placeholder = document.getElementById("header-placeholder");
-    placeholder.innerHTML = data;
+    document.getElementById("header-placeholder").innerHTML = data;
 
     if (typeof initializeThemeToggle === "function") {
       initializeThemeToggle();
