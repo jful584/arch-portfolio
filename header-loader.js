@@ -1,4 +1,4 @@
-fetch("header.html")
+fetch("/components/header.html")
   .then(res => res.text())
   .then(data => {
     const placeholder = document.getElementById("header-placeholder");
