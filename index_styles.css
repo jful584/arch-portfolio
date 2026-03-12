@@ -1,5 +1,4 @@
 html, body {
-  min-width: 320px;
   background-color: var(--page-color);
   padding-bottom: 200px;
 }

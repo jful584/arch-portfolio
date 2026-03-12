@@ -1,7 +1,10 @@
 fetch("/header.html")
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
-    document.getElementById("header-placeholder").innerHTML = data;
+    const placeholder = document.getElementById("header-placeholder");
+    placeholder.innerHTML = data;
 
-    initializeThemeToggle();
+    if (typeof initializeThemeToggle === "function") {
+      initializeThemeToggle();
+    }
   });

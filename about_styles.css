@@ -28,7 +28,6 @@ body {
 
 html,
 body {
-  min-width: 320px;
   background-color: var(--page-color);
   padding-bottom: 20px;
 }

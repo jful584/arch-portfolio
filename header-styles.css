@@ -9,8 +9,8 @@
 }
 
 html.dark-mode {
-  --background-color: #1a1a1a;
-  --page-color: #1a1a1a;
+  --background-color: #121212;
+  --page-color: #121212;
   --link-color: #ff7e3e;
   --text-color: #eeeff1;
   --light-color: transparent;
@@ -18,7 +18,7 @@ html.dark-mode {
 }
 
 html, body {
-  min-width: 500px;
+  min-width: 375px;
   min-height: 100%;
   background-color: var(--page-color);
 }
@@ -76,27 +76,75 @@ body {
   font-weight: 500;
   display: flex;
   align-items: center;
+  gap: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .header .theme-toggle {
-  background-color: none;
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 6px 0px;
-  transition: .15s;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background: var(--text-color);
+  border-radius: 50%;
   border: none;
-  background: none;
-  font-family: 'Aileron', 'Times New Roman';
-  font-size: inherit;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  transition: .15s;
+  /* prevents SVG overflow */
 }
 
-.header .theme-toggle:hover {
-  color: var(--link-color);
+.theme-toggle img {
+  width: 20px;
+  height: 20px;
 }
+
+/* Default (light mode) */
+.sun {
+  display: none;
+  transition: .15s;
+}
+
+.moon {
+  display: block;
+  transition: .15s;
+}
+
+html.dark-mode .sun {
+  display: block;
+}
+
+html.dark-mode .moon {
+  display: none;
+}
+
+
+ .theme-toggle:hover {
+  background: var(--link-color);
+}
+
+
+
+
+
 
 .header .about-button,
 .header .contact-button {
-  margin-left: 30px;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -140,6 +188,10 @@ body {
     font-size: 16px;
   }
 
+  .header .right-section {
+    gap: 20px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -152,9 +204,12 @@ body {
     font-size: 20px;
   }
 
+  .header .right-section {
+    gap: 10px;
+  }
+
   .header .about-button,
   .header .contact-button {
-    margin-left: 10px;
     justify-content: right;
 
   }
