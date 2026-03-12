@@ -1,6 +1,14 @@
 
 /*Title Stuff*/
 
+html,
+body {
+  min-width: 500px;
+  min-height: 100%;
+  background-color: var(--page-color);
+  padding-bottom: 20px;
+}
+
 .title-container {
   padding-top: 50px;
   display: flex;
@@ -111,7 +119,7 @@
 .viewer-caption {
   margin-top: 16px;
   font-size: 16px;
-  color: #444;
+  color: var(--text-color);
 }
 
 /*Fade Transition*/

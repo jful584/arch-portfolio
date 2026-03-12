@@ -4,32 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jack Fuller</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
   <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
   <link rel="stylesheet" href="index_styles.css">
   <link rel="stylesheet" href="header-styles.css">
-  <script src="theme-script.js" defer></script>
+  <script src="../theme-script.js" defer></script>
+  <script src="../header-loader.js" defer></script>
+
 
 
 
 </head>
-<body>
-  <section class="header">
-    <div class="left-section">
-      <a href="index.html" class="name-top">JACK FULLER</a>
-    </div>
-    <div class="right-section">
-      <button id="theme-toggle" class="theme-toggle">Mode</button>
-      <a href="about.html" class="about-button">About</a>
-      <a href="contact.html" class="contact-button">Contact</a>
-      
-    </div>
-  </section>
-
-
+  <div id="header-placeholder"></div>
   <section class="quote-container">
     <p class="quote-text" id="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam.</p>
     <p class="quote-author" id="quote-author">-- Sample Person</p>
   </section>
+<body>
+
+  
 
 
   <section class="projects-container">
@@ -143,6 +140,6 @@
 
 </body>
 
-<script src="quotes-script.js"></script>
+<script src="quotes-script.js" defer></script>
 
 </html>

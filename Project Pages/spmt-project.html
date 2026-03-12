@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jack Fuller: Processional Promenade</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
   <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
   <link rel="stylesheet" href="project-page-styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../header-styles.css">
+  <script src="../theme-script.js" defer></script>
+  <script src="../header-loader.js" defer></script>
 </head>
 
 
@@ -16,15 +23,7 @@
 
 
 <body>
-  <section class="header">
-    <div class="left-section">
-      <a href="../index.html" class="name-top">JACK FULLER</a>
-    </div>
-    <div class="right-section">
-      <a href="../about.html" class="about-button">About</a>
-      <a href="../contact.html" class="contact-button">Contact</a>
-    </div>
-  </section>
+  <div id="header-placeholder"></div>
 
   <section class="title-container">
     <h1 class="title">Spatial Membrane</h1>

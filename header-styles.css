@@ -5,20 +5,26 @@
   /*--background-color: #eeeff1;*/
   --background-color: #eeeff1;
   --page-color: white;
+  --border-color: transparent;
 }
 
-.dark-mode {
+html.dark-mode {
   --background-color: #1a1a1a;
   --page-color: #1a1a1a;
   --link-color: #ff7e3e;
   --text-color: #eeeff1;
-  --light-color: transparent
+  --light-color: transparent;
+  --border-color: #ff7e3e;
 }
 
 html, body {
   min-width: 500px;
   min-height: 100%;
   background-color: var(--page-color);
+}
+
+#header-placeholder {
+  height: 80px;
 }
 
 * {

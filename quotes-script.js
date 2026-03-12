@@ -1,3 +1,4 @@
+console.log("quote script running");
 const quotes = [
   {
     text: "Simplicity is the ultimate sophistication.",

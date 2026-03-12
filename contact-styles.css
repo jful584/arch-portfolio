@@ -5,18 +5,19 @@
   --background-color: #eeeff1;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   min-width: 320px;
 
+}
+
+html,
+body {
+  min-width: 320px;
+  background-color: var(--page-color);
+  height: 100vh;
 }
 
 body {
@@ -60,7 +61,8 @@ body {
 .card {
   padding: 20px 24px;
   border-radius: 8px;
-  box-shadow: -4px 4px 5px lightgrey;
+  box-shadow: -4px 4px 5px var(--light-color);
+  border: 1px solid var(--border-color);
   text-align: center;
   transition: 0.2s;
 }
