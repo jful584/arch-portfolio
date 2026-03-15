@@ -41,7 +41,7 @@ body {
 .contact-grid-top {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 4vw;
   row-gap: 50px;
   justify-items: center;
