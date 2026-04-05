@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Geometric Reasoning / Drawing Machine</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+
+  <!--Use the ones with /arch-portfolio/ when pushing to git-->
+  <link rel="stylesheet" href="/arch-portfolio/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
+  <script src="/arch-portfolio/js/theme-script.js" defer></script>
+  <script src="/arch-portfolio/js/header-loader.js" defer></script>
+
+
+  <!--
+    <link rel="stylesheet" href="/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/header-styles.css">
+  <script src="/js/theme-script.js" defer></script>
+  <script src="/js/header-loader.js" defer></script>
+  -->
+
+</head>
+
+
+
+
+
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="title-container">
+    <h1 class="title">Geometric Reasoning: The Drawing Machine</h1>
+    <p class="date">Spring 2026</p>
+    <p class="description">	<span class="indent">
+      In this project, three distinct but interconnected objects become a "drawing machine" as 
+      they are methodically transformed to create a new representative geometry. These object are
+      actually the "soul" pieces from the pencil sharpener in the "Objects of Arresting Novelty" project, and
+      their motion responds to the actions of their original object. All objects first rotate around the 
+      bounding box's centroid axis. Next, all are rotated around the axis of the motor, then around the sharpener's encasing,
+      and finally the sharpener spiral rotates about its own axis. Meanwhile, the elements slowly seperate from each other, 
+      emulating an exploded axon diagram.
+    </span>
+
+
+      <span class="indent">By attaching points to important parts of the objects and creating a curve through them, 
+        a new geometry, the drawing, is constructed through the motion. This main curve construction was iterated one more time 
+        by dividing the curve, shifting the indecies of the points on each curve incrementally, and connecting the corrensponding incdecies to create the 
+        diagonal sweeping motion seen in the final model.
+      </span>
+      <span class="indent">This project led me to develop new methods of representation. I learned about
+        color mixing and composition, model making, sequential transformation and animation using Grasshopper, and staging model photos.
+      </span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="Geo-reasoning_images/2.01_draw1-01.webp" id="viewerImage" data-index="0" data-caption="Elements of the drawing machine." alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Elements of the drawing machine.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="Geo-reasoning_images/2.01_draw1-01.webp"  data-caption="Elements of the drawing machine." alt="">
+      <img src="Geo-reasoning_images/2.02_Action_diagram_try3.webp"  data-caption="Motion diagram of the elements." alt="">
+      <img src="Geo-reasoning_images/2.03_draw1.webp"  data-caption="Construction of the drawing curve through the elements." alt="">
+      <img src="Geo-reasoning_images/2.04_draw2.webp"  data-caption="Construction of the drawing curve after motion." alt="">
+      <img src="Geo-reasoning_images/2.5-2.8 Drawings_Artboard 5.webp"  data-caption="Final drawing curve." alt="">
+      <img src="Geo-reasoning_images/2.5-2.8 Drawings_Artboard 6.webp"  data-caption="Final drawing curve." alt="">
+      <img src="Geo-reasoning_images/2.5-2.8 Drawings_Artboard 7.webp"  data-caption="Final drawing curve." alt="">
+      <img src="Geo-reasoning_images/2.5-2.8 Drawings_Artboard 8.webp"  data-caption="Final drawing curve." alt="">
+      <img src="Geo-reasoning_images/2.9_draw2.webp"  data-caption="Rendering of the consturcted drawing." alt="">
+      <img src="Geo-reasoning_images/ModelPhoto_03_detailed1 copy.webp"  data-caption="Photo of the drawing model." alt="">
+      <img src="Geo-reasoning_images/ModelPhoto_04.jpg"  data-caption="Photo of the drawing model." alt="">
+      <img src="Geo-reasoning_images/ModelPhoto_06_detailed2 copy.webp"  data-caption="Photo of the drawing model." alt="">
+      <img src="Geo-reasoning_images/ModelPhoto_10.jpg"  data-caption="Photo of the drawing model." alt="">
+
+
+
+
+
+  </section>
+
+ <script src="/arch-portfolio/js/viewer-script.js"></script>
+  <!--<script src="/js/viewer-script.js"></script>-->
+  
+</body>
+</html>

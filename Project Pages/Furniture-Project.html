@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Processional Promenade</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+  <link rel="stylesheet" href="/arch-portfolio/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
+  <script src="/arch-portfolio/js/theme-script.js" defer></script>
+  <script src="/arch-portfolio/js/header-loader.js" defer></script>
+
+  <!--<link rel="stylesheet" href="/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/header-styles.css">
+  <script src="/js/theme-script.js" defer></script>
+  <script src="/js/header-loader.js" defer></script>-->
+
+</head>
+
+
+
+
+
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="title-container">
+    <h1 class="title">Reconfigurable Furniture</h1>
+    <p class="date">Spring 2026</p>
+    <p class="description">	<span class="indent">
+      This three-part project took course over about 5 weeks with group and individual studies, sketching, and model-making. First, our group was assigned to study
+      furniture by the Japanese architect Shigeru Ban. I studied his cardboard bed design, a simple piece created to be mass shipped and assembled to natural disaster shelters.
+      The simplicity yet complexity introduced by the interlocking pannels were the key inspiration for the next steps.
+    </span>
+
+
+      <span class="indent">After the study, we individually developed sketches and models for a proposal. Our groups then re-formed to combine our ideas together into one concept
+        to move foward with. We took the pannel structure composed of spinal and rib pieces from Ban's bed and make it modular, allowing the pannels to slide in-and-out to create
+        an array of differnet pieces depending on orientation and the configuration of the pieces. Additionally, six long planks were introduced to add structure and complexity
+        to the design, which lock in place with friction-fit pegs. Each can slide in in either direction through the plus-shaped holes.
+      </span>
+      <span class="indent">The final design was constructed from a 4x8 piece of plywood that was cut using a CNC router. After some light sanding, the pieces were ready to be 
+        assembled into any desired configuration.
+      </span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="Furniture-images/1722_Sectiondrawing_.webp" id="viewerImage" data-index="0" data-caption="Section drawing of the furniture." alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Section drawing of the furniture.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="Furniture-images/1722_Sectiondrawing_.webp"  data-caption="Section drawing of the furniture." alt="">
+      <img src="Furniture-images/1722_PLAN_DRAWING att02.webp"  data-caption="Plan drawing of the furniture." alt="">
+      <img src="Furniture-images/1722_Elevationdrawing1_.webp"  data-caption="Elevation drawing of the furniture." alt="">
+
+      <img src="Furniture-images/cardboard_bed_diagram01.webp"  data-caption="Diagram of the cardboard bed assembly." alt="">
+      <img src="Furniture-images/cardboard_bed_diagram02.webp"  data-caption="Diagram of the cardboard bed's storage elements." alt="">
+      <img src="Furniture-images/cardboard_bed_diagram03.webp"  data-caption="Diagram of the space the cardboard bed established in relation to the human scale." alt="">
+
+      <img src="Furniture-images/bed_photos copy.webp"  data-caption="Photos of the built piece in the bed configuration." alt="">
+      <img src="Furniture-images/chair_photos copy.webp"  data-caption="Photos of the built piece in the chair configuration." alt="">
+      <img src="Furniture-images/desk_photos copy.webp"  data-caption="Photos of the built piece in the desk configuration." alt="">
+
+      
+
+      <img src="Furniture-images/1722_axonChair_draw01.webp"  data-caption="Axon of furniture in the chair configuration." alt="">
+      <img src="Furniture-images/mesitting_smaller.webp"  data-caption="Figure (me) sitting in the built piece." alt="">
+      <img src="Furniture-images/proj2_process_sketchesandothers copy.webp"  data-caption="Original sketches." alt="">
+
+
+
+
+
+  </section>
+
+  <!--<script src="/arch-portfolio/js/viewer-script.js"></script>-->
+
+  <script src="/arch-portfolio/js/viewer-script.js"></script>
+</body>
+</html>

@@ -79,6 +79,11 @@ html, body {
   object-position: center 62%;
 }
 
+.card img.geo-gif {
+  object-fit: contain;
+  background-color: black;
+}
+
 .card:hover {
   scale: 1.01;
 }
