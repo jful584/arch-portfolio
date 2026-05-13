@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Writer's Passage</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+
+  <!--Use the ones with /arch-portfolio/ when pushing to git-->
+
+
+  <link rel="stylesheet" href="/arch-portfolio/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
+  <script src="/arch-portfolio/js/theme-script.js" defer></script>
+  <script src="/arch-portfolio/js/header-loader.js" defer></script>
+</head>
+
+
+
+<!--
+  <link rel="stylesheet" href="/css/project-page-styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/header-styles.css">
+<script src="/js/theme-script.js" defer></script>
+<script src="/js/header-loader.js" defer></script>
+-->
+
+
+
+
+
+
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="title-container">
+    <h1 class="title">Writer's Passage</h1>
+    <p class="date">Spring 2026</p>
+    <p class="description">	<span class="indent">
+      The purpose of this project was to develop a landscape and structure suited for a writer's retreat. First, voids were cut out of an original ground site in order to
+      respond to light. My objective was to allow light to penetrate from the south side which was often fully baked in light to the north side which was often in shade. Additionally,
+      cavernous voids were cut into the back face with holes punching through to allow more precise control of the light.
+    </span>
+
+
+      <span class="indent">Next came the process of planning the programs and massing the building. The library was placed in the cavern because of its ability to direct light away from books. The main path of circulation that a 
+        visitor would take would be to walk through the triangular hole connecting the north and south sides into the library. Then, going up a snaking series of stairs and walkways, writers are taken through
+        the private writer's space with a bedroom, kitchen, and other amenities. Up past the private area is where three individual writing spaces are found, overlooking the edge of the sight. Finally, the final flight of stairs
+        leads to an open rooftop courtyard. While the private mass is aligned with north, the public mass is oriented to the plane of the ground, creating a physical distinction in program. 
+        However, this distinction is contrasted by the "plug-in" logic of the intersection of the masses; the private space is inserted into the public circulation with no walls in between to both allow light
+        to penetrate through the central axis and to promote collaboration among writers.
+      </span>
+
+      <span class="indent">The final piece was the structural framing and facade. The project is made of three different layers: the exterior skin, the plank framing, and the interior skin. 
+        Both exterior and interior facades are peeled back to different degrees to create a loop around the upper structure, weaving together the public and private spaces.
+      </span>
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="Writer-space-images/ELES_DRAW_03.2.webp" id="viewerImage" data-index="0" data-caption="Oblique elevations of the structure" alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        Oblique elevations of the structure
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+      <img src="Writer-space-images/ELES_DRAW_03.2.webp"  data-caption="Oblique elevations of the structure" alt="">
+      <img src="Writer-space-images/PROCESS_WORK01 copy.webp"  data-caption="Process sketches" alt="">
+      <img src="Writer-space-images/PROCESS_WORK02 copy.webp"  data-caption="Process sketches" alt="">
+      <img src="Writer-space-images/PLAN_alsoprettyimportant_01.webp"  data-caption="Plan view of the lower level" alt="">
+      <img src="Writer-space-images/PLAN_key_01.2.webp"  data-caption="Plan view of the upper writer spaces and living areas" alt="">
+      <img src="Writer-space-images/SECTION_DRAW_01.webp"  data-caption="Section view cutting into the main living space and circulatory paths" alt="">
+      <img src="Writer-space-images/process_draws_01.webp"  data-caption="Demonstration of the void and massing process" alt="">
+      <img src="Writer-space-images/EXP_view_01 copy.webp"  data-caption="View of the tunnel between the north and south sides" alt="">
+      <img src="Writer-space-images/Experiential_02 copy.webp"  data-caption="View of the personal writing and living space" alt="">
+      <img src="Writer-space-images/Model_photo02 copy.webp"  data-caption="Model photo showcasing the exterior facade and its interaction with the sun" alt="">
+      <img src="Writer-space-images/Model_photo03 copy.webp"  data-caption="Model photo of the library and the column of light" alt="">
+      <img src="Writer-space-images/Model_photo04 copy.webp"  data-caption="Model photo illustrating the experience when approaching the structure" alt="">
+      <img src="Writer-space-images/Model_photo01 copy.webp"  data-caption="Model photo showing the framing of light through the ground into the group study and library" alt="">
+
+
+
+
+
+  </section>
+
+<!-- Add /arch-portflio/ in front when pushing to git -->
+  <script src="/arch-portfolio/js/viewer-script.js"></script>
+  
+</body>
+</html>

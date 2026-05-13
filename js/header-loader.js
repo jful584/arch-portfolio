@@ -1,4 +1,4 @@
-const BASE = "/arch-portfolio/";
+const BASE = "/arch-portfolio";
 
 //ADD IN BASE to fetch when pushing to git
 
