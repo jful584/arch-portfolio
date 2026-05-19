@@ -12,11 +12,14 @@
 
 <!--Use the ones with /arch-portfolio/ when pushing to git-->
 
-    <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
-    <link rel="stylesheet" href="/arch-portfolio/css/index_styles.css">
-    <link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
-    <script src="/arch-portfolio/js/theme-script.js" defer></script>
-    <script src="/arch-portfolio/js/header-loader.js" defer></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+<link rel="stylesheet" href="/arch-portfolio/css/index_styles.css">
+<link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
+<script src="/arch-portfolio/js/theme-script.js" defer></script>
+<script src="/arch-portfolio/js/header-loader.js" defer></script>
+<script src="/arch-portfolio/js/filtersort-script.js" defer></script>
+
 
 
 <!--
@@ -25,7 +28,9 @@
   <link rel="stylesheet" href="css/header-styles.css">
   <script src="js/theme-script.js" defer></script>
   <script src="js/header-loader.js" defer></script>
+  <script src="js/filtersort-script.js" defer></script>
 -->
+
 
 
 
@@ -45,16 +50,28 @@
     </section>
   -->
 
+  <section class="toolbar-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+      <button class="filter-btn" data-filter="photography">Photography</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+      <select id="sort-select">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="title-asc">A-Z</option>
+        <option value="title-desc">Z-A</option>
+      </select>
+  </section>
 
   
 
 
-  <section class="projects-container">
-    <a href="/arch-portfolio/Project Pages/Process-Project.html" class="card">
+  <section class="projects-container" id="projects-container">
+    <a href="/arch-portfolio/Project Pages/Process-Project.html" class="card" data-category="architecture" data-year="2025" data-term="3.1" data-title="Processional Promenade">
       <img class="pp" src="./images/ax3_basic1 (1).webp" alt="">
       <div class="overlay">
         <div class="overlay-text">
-          <h1 class="title">Processional Prommenade</h1>
+          <h1 class="title">Processional Promenade</h1>
           <p class="date">Fall 2025</p>
         </div>
       </div>
@@ -64,7 +81,7 @@
 
 
 
-    <a href="/arch-portfolio/Project Pages/spmt-project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/spmt-project.html" class="card" data-category="architecture" data-year="2025" data-term="3.3" data-title="Spatial Membrane">
       <video
       autoplay
       loop
@@ -85,7 +102,7 @@
 
 
 
-    <a href="/arch-portfolio/Project Pages/drafting-project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/drafting-project.html" class="card" data-category="architecture" data-year="2025" data-term="3.2" data-title="Elemental Drafts">
       <img src="images/MERCEDES_BENZ_ROOF_AXON_F2.gif" alt="" style="object-fit: contain;">
       <div class="overlay">
         <div class="overlay-text">
@@ -98,7 +115,7 @@
 
 
 
-    <a href="/arch-portfolio/Project Pages/fsu-project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/fsu-project.html" class="card" data-category="photography" data-year="2024" data-term="2" data-title="FSU Photoshoot">
       <img src="images/fsurecruitproj copy.webp" class="fsu-card" alt="">
       <div class="overlay">
         <div class="overlay-text">
@@ -111,7 +128,7 @@
 
 
 
-    <a href="/arch-portfolio/Project Pages/airport-project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/airport-project.html" class="card" data-category="architecture" data-year="2025" data-term="4" data-title="Modular Airport Terminal">
       <img src="images/render_ground_att1_editting peggy.webp" alt="">
       <div class="overlay">
         <div class="overlay-text">
@@ -122,7 +139,7 @@
 
     </a>
 
-    <a href="/arch-portfolio/Project Pages/sharpener-project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/sharpener-project.html" class="card" data-category="research" data-year="2026" data-term="1.2" data-title="Object of Arresting Novelty">
       <img src="images/Super_Imposition_pic2_FINAL1_print.webp" alt="" class="pencil-image">
       <div class="overlay">
         <div class="overlay-text">
@@ -133,7 +150,7 @@
 
     </a>
 
-    <a href="/arch-portfolio/Project Pages/Motion-Project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/Motion-Project.html" class="card" data-category="research" data-year="2026" data-term="1.1" data-title="Diagramming Motion">
       <img src="Project Pages/Motion-Project-images/motion_picture_2_02_PRINT.webp" alt="">
       <div class="overlay">
         <div class="overlay-text">
@@ -144,27 +161,27 @@
 
     </a>
 
-    <a href="/arch-portfolio/Project Pages/GeoReasoning-Project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/GeoReasoning-Project.html" class="card" data-category="research" data-year="2026" data-term="1.4" data-title="Geometric Reasoning">
       <img src="images/Project2GR_FrameAnimation_JackFuller.gif" alt="" class="geo-gif">
       <div class="overlay">
         <div class="overlay-text">
           <h1 class="title">Geometric Reasoning</h1>
           <p class="date">Spring 2026</p>
         </div>
-      </div>
+      </div> </a>
 
 
-    <a href="/arch-portfolio/Project Pages/Furniture-Project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/Furniture-Project.html" class="card" data-category="architecture" data-year="2026" data-term="1.3" data-title="Reconfigurable Furniture">
       <img src="images/mesitting.webp" alt="">
       <div class="overlay">
         <div class="overlay-text">
           <h1 class="title">Reconfigurable Furniture</h1>
           <p class="date">Spring 2026</p>
         </div>
-      </div>
+      </div> </a>
 
       
-    <a href="/arch-portfolio/Project Pages/WritersPassage-Project.html" class="card">
+    <a href="/arch-portfolio/Project Pages/WritersPassage-Project.html" class="card" data-category="architecture" data-year="2026" data-term="1.5" data-title="Writer's Passage">
       <img src="images/Model_photo02 copy.webp" alt="">
       <div class="overlay">
         <div class="overlay-text">
@@ -191,9 +208,8 @@
 
 </body>
 
-<!--
+
   <script src="/arch-portfolio/js/quotes-script.js" defer></script>
--->
-<script src="/arch-portfolio/js/quotes-script.js" defer></script>
+
 
 </html>

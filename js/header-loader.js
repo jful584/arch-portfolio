@@ -1,6 +1,6 @@
 const BASE = "/arch-portfolio";
 
-//ADD IN BASE to fetch when pushing to git
+//ADD IN  "/arch-portfolio" to BASE to fetch when pushing to git
 
 fetch(BASE + "/components/header.html")
   .then(res => res.text())

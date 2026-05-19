@@ -27,6 +27,63 @@ html, body {
   font-size: 20px;
 }
 
+
+/*Toolbar Section*/
+
+.toolbar-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    gap: 1rem;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+
+
+.toolbar-container button{
+  all: unset;
+  padding: 0.6rem .6rem;
+  border: 1px solid;
+  border-radius: 10px;
+  color: var(--text-color);
+  background: var(--page-color);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.toolbar-container select{
+  all: unset;
+  padding: 0.6rem .6rem;
+    border: 1px solid;
+    border-radius: 10px;
+    color: var(--text-color);
+    background: var(--page-color);
+    cursor: pointer;
+    transition: .3s;
+  text-align: center;
+}
+
+.toolbar-container button:hover, select:hover {
+  background-color: var(--page-color);
+  color: var(--link-color);
+}
+
+.toolbar-container button.active{
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+
+
+
+
+
+
 /*Project Grid Section*/
 
 .projects-container {
@@ -34,7 +91,7 @@ html, body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10vw;
+  gap: 6vw;
   padding: 0 100px;
 }
 
@@ -81,7 +138,7 @@ html, body {
 
 .card img.geo-gif {
   object-fit: contain;
-  background-color: black;
+  background-color: rgb(7, 7, 7);
 }
 
 .card:hover {
@@ -147,7 +204,9 @@ img.fsu-card {
 
 
 
-
+.card.hidden {
+  display: none;
+}
 
 
 
@@ -173,9 +232,21 @@ img.fsu-card {
     font-size: 18px;
   }
 
+  .toolbar-container {
+    font-size: 14px;
+  }
+
+  .toolbar-container button{
+    padding: 5px;
+  }
+
+  .toolbar-container select {
+    padding: 5px;
+  }
+
   .projects-container {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 1vw;
     padding: 0 20px;
   }
   
