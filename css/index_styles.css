@@ -32,15 +32,18 @@ html, body {
 
 .toolbar-container {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    flex-direction: row;
-    padding-top: 40px;
-    padding-bottom: 5px;
-    gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  gap: 1rem;
   margin-top: 5px;
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -85,6 +88,12 @@ html, body {
 
 
 /*Project Grid Section*/
+
+.projects-mega-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .projects-container {
   margin-top: 50px;
@@ -232,17 +241,18 @@ img.fsu-card {
     font-size: 18px;
   }
 
-  .toolbar-container {
-    font-size: 14px;
-  }
+    .toolbar-container {
+      font-size: 14px;
+      gap: 0.5rem;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  
+    .toolbar-container button,
+    .toolbar-container select {
+      padding: 5px 8px;
+    }
 
-  .toolbar-container button{
-    padding: 5px;
-  }
-
-  .toolbar-container select {
-    padding: 5px;
-  }
 
   .projects-container {
     grid-template-columns: 1fr 1fr;
@@ -262,6 +272,15 @@ img.fsu-card {
 }
 @media (max-width: 500px) {
 
+    .toolbar-container {
+      gap: 6px;
+      justify-content: center;
+    }
+  
+    .toolbar-container button,
+    .toolbar-container select {
+      font-size: 12px;
+    }
 
   .quote-text {
     font-size: 14px;
