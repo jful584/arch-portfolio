@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Fuller: Joshua Tree</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/gnl7far.css">
+
+  <!--Use the ones with /arch-portfolio/ when pushing to git-->
+
+  
+  <link rel="stylesheet" href="/arch-portfolio/css/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/arch-portfolio/css/header-styles.css">
+  <script src="/arch-portfolio/js/theme-script.js" defer></script>
+  <script src="/arch-portfolio/js/header-loader.js" defer></script>
+
+<!--
+    <link rel="stylesheet" href="/css/project-page-styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/header-styles.css">
+<script src="/js/theme-script.js" defer></script>
+<script src="/js/header-loader.js" defer></script> -->
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="title-container">
+    <h1 class="title">Joshua Tree </h1>
+    <p class="date">Summer 2026</p>
+    <p class="description">	<span class="indent">
+      Photos from a trip to Joshua Tree National Park in California. Shot on a Nikon D3200, edited using Adobe Lightroom and Photoshop.
+    </span>
+
+
+    </p>
+  </section>
+
+
+  <section class="image-viewer-container" id="viewer-section">
+    <div class="viewer-image-wrapper">
+      <button class="nav-btn" id="prevBtn" onclick=next(-1)>
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <img src="JoshuaTree-images/DSC_0184.jpg" id="viewerImage" data-index="0" data-caption="" alt=""> <!--Put the 1st image here-->
+      <button class="nav-btn" id="nextBtn" onclick=next(1)>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="caption-container">
+      <p class="viewer-caption" id="viewerCaption">
+        
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-grid">
+
+      <img src="JoshuaTree-images/DSC_0184.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0202.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0226.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0241.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0302.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0313.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0393.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0460.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0470.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/Panorama3 copy.jpg"  data-caption="" alt="">
+      <img src="JoshuaTree-images/DSC_0381-Pano.jpg"  data-caption="" alt="">
+
+
+
+
+
+  </section>
+
+  <!-- Add /arch-portflio/ in front when pushing to git -->
+  <script src="/js/viewer-script.js"></script>
+  
+</body>
+</html>

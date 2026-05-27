@@ -235,3 +235,81 @@ body {
 
 
 
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+
+  animation: fadeIn 0.2s ease;
+}
+
+.lightbox-image {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+
+  background: none;
+  border: none;
+
+  color: white;
+  font-size: 54px;
+  cursor: pointer;
+
+  z-index: 5001;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  color: white;
+  font-size: 48px;
+
+  padding: 5px 8px;
+  cursor: pointer;
+
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
